@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>我的學習歷程｜高中生升學作品集</title>
+<style>
+:root{--blue:#4f91c8;--dark:#23445d;--soft:#eaf6ff;--bg:#f5faff;--text:#5f7485;--line:#d9edf9;--white:#fff;--shadow:0 18px 50px rgba(54,126,173,.12)}
+*{box-sizing:border-box;margin:0;padding:0;scroll-behavior:smooth}
+body{font-family:"Noto Sans TC","Microsoft JhengHei",sans-serif;color:var(--dark);background:radial-gradient(circle at 10% 10%,#e8f6ff,transparent 28%),radial-gradient(circle at 90% 20%,#e3f3ff,transparent 25%),var(--bg);line-height:1.8}
+header{position:fixed;top:0;width:100%;z-index:10;background:rgba(255,255,255,.82);backdrop-filter:blur(18px);border-bottom:1px solid #dceef8}
+nav{max-width:1150px;height:72px;margin:auto;padding:0 22px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:21px;font-weight:900;color:var(--blue);text-decoration:none}.logo span{color:#8bb9d8}
+.links{display:flex;gap:5px;list-style:none}.links a{color:#557084;text-decoration:none;padding:8px 12px;border-radius:12px;font-size:14px}.links a:hover{background:var(--soft);color:var(--blue)}
+.menu{display:none;border:0;background:var(--soft);padding:9px 12px;border-radius:10px;font-size:20px}
+.container{width:min(1120px,90%);margin:auto}section{padding:105px 0}.title{text-align:center;margin-bottom:50px}.title small{color:var(--blue);letter-spacing:3px;font-weight:900}.title h2{font-size:42px;margin:5px 0;color:var(--dark)}.title p{color:var(--text)}
+.hero{min-height:100vh;padding-top:72px;display:flex;align-items:center;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:70px;align-items:center}.tag{display:inline-block;padding:7px 15px;border-radius:30px;background:#fff;border:1px solid var(--line);color:var(--blue);font-size:13px;font-weight:800;margin-bottom:20px}.hero h1{font-size:clamp(45px,7vw,76px);line-height:1.12;margin-bottom:18px}.hero h1 span{color:var(--blue)}.subtitle{font-size:20px;color:#678093;margin-bottom:15px}.hero p{color:var(--text);max-width:650px;margin-bottom:28px}.buttons{display:flex;gap:12px;flex-wrap:wrap}.btn{padding:12px 22px;border-radius:14px;text-decoration:none;font-weight:800;display:inline-block;transition:.3s}.primary{background:linear-gradient(135deg,#6eb6e5,#4389c1);color:white;box-shadow:0 12px 28px rgba(67,137,193,.25)}.outline{border:1px solid #acd4ec;color:#3474a4;background:#fff}.btn:hover{transform:translateY(-3px)}
+.profile{background:rgba(255,255,255,.75);border:1px solid var(--line);border-radius:35px;padding:38px;text-align:center;box-shadow:var(--shadow);animation:float 5s ease-in-out infinite}.photo{width:225px;height:225px;margin:auto;border-radius:50%;background:linear-gradient(135deg,#d4edfc,#f8fcff);border:8px solid #fff;display:flex;align-items:center;justify-content:center;font-size:70px;color:#76aed0;box-shadow:0 15px 35px rgba(62,126,166,.15)}.profile h3{margin-top:20px}.profile p{font-size:14px;color:#7b91a0}@keyframes float{50%{transform:translateY(-10px)}}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:24px}.card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:30px;box-shadow:var(--shadow);transition:.3s}.card:hover,.project:hover,.activity:hover,.future:hover{transform:translateY(-6px)}.icon{width:50px;height:50px;border-radius:15px;background:var(--soft);display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:15px}.card p,.project p,.activity p,.future p{color:var(--text);font-size:14px}
+.timeline{max-width:900px;margin:auto;position:relative}.timeline:before{content:"";position:absolute;left:50%;top:0;bottom:0;width:3px;background:#cce7f6}.item{width:50%;padding:15px 40px;position:relative}.item:nth-child(even){margin-left:50%}.dot{position:absolute;top:29px;width:16px;height:16px;border-radius:50%;background:var(--blue);border:4px solid #fff;box-shadow:0 0 0 4px #d8effc}.item:nth-child(odd) .dot{right:-8px}.item:nth-child(even) .dot{left:-8px}.timeline-card{background:#fff;border:1px solid var(--line);padding:25px;border-radius:20px;box-shadow:var(--shadow)}.year{color:var(--blue);font-weight:900;font-size:14px}.timeline-card p{color:var(--text);font-size:14px}
+.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}.project{background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:var(--shadow);transition:.3s}.project-img{height:180px;background:linear-gradient(135deg,#d8efff,#f6fbff);display:flex;align-items:center;justify-content:center;font-size:55px;color:#75acd0}.project-body{padding:24px}.project-body small{color:var(--blue);font-weight:900}.project-body h3{margin:5px 0}
+.activities{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.activity{text-align:center;background:#fff;border:1px solid var(--line);padding:25px 15px;border-radius:20px;box-shadow:var(--shadow);transition:.3s}.activity .big{font-size:35px}.activity h3{font-size:17px}
+.skills{max-width:850px;margin:auto}.skill{margin-bottom:23px}.skill-head{display:flex;justify-content:space-between;font-weight:800;color:#47667a}.bar{height:10px;background:#e0f0f9;border-radius:20px;overflow:hidden}.fill{height:100%;width:0;background:linear-gradient(90deg,#8bc9ed,#4c91c7);transition:1.4s}
+.quote{max-width:900px;margin:auto;padding:45px;background:linear-gradient(135deg,#e7f5ff,#fff);border:1px solid var(--line);border-radius:28px;text-align:center;box-shadow:var(--shadow);color:#526d7f;font-size:18px}.quote b{font-size:50px;color:#88bddc}
+.futures{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}.future{background:#fff;border:1px solid var(--line);border-radius:24px;padding:30px;box-shadow:var(--shadow);transition:.3s}.num{font-size:42px;font-weight:900;color:#a7cee6}
+.contact{background:linear-gradient(135deg,#dff3ff,#f8fcff);border:1px solid var(--line);padding:50px;border-radius:30px;text-align:center;box-shadow:var(--shadow)}.contact p{color:var(--text);margin:10px 0 22px}
+footer{text-align:center;padding:30px;color:#829aaa;font-size:13px}#top{position:fixed;right:22px;bottom:22px;width:48px;height:48px;border:0;border-radius:50%;background:#5797c5;color:#fff;font-size:20px;opacity:0;pointer-events:none;transition:.3s;cursor:pointer}#top.show{opacity:1;pointer-events:auto}
+.reveal{opacity:0;transform:translateY(28px);transition:.8s}.reveal.show{opacity:1;transform:none}
+@media(max-width:900px){.links{display:none;position:absolute;top:72px;left:0;width:100%;background:#fff;padding:12px;flex-direction:column}.links.open{display:flex}.menu{display:block}.hero-grid{grid-template-columns:1fr;text-align:center}.hero p{margin-left:auto;margin-right:auto}.buttons{justify-content:center}.grid2{grid-template-columns:1fr}.projects{grid-template-columns:1fr 1fr}.activities{grid-template-columns:1fr 1fr}.futures{grid-template-columns:1fr}}
+@media(max-width:650px){section{padding:80px 0}.title h2{font-size:34px}.hero h1{font-size:45px}.timeline:before{left:8px}.item,.item:nth-child(even){width:100%;margin-left:0;padding-left:38px;padding-right:0}.item:nth-child(odd) .dot,.item:nth-child(even) .dot{left:0;right:auto}.projects{grid-template-columns:1fr}.quote{padding:30px 20px}.contact{padding:35px 20px}}
+</style>
+</head>
+<body>
+
+<header>
+<nav>
+<a class="logo" href="#home">My<span>Portfolio</span></a>
+<button class="menu" id="menu">☰</button>
+<ul class="links" id="links">
+<li><a href="#home">首頁</a></li><li><a href="#about">關於我</a></li><li><a href="#journey">學習歷程</a></li><li><a href="#results">課程成果</a></li><li><a href="#activities">多元表現</a></li><li><a href="#skills">能力</a></li><li><a href="#future">升學目標</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="hero" id="home">
+<div class="container hero-grid">
+<div class="reveal">
+<div class="tag">🎓 高中生・升大學學習歷程</div>
+<h1>你好，我是<br><span>你的名字</span></h1>
+<div class="subtitle">高中生｜探索・學習・成長</div>
+<p>這是一份屬於我的學習歷程。我希望透過這個網站，記錄高中階段的學習足跡、課程成果、多元表現與對未來的想像。</p>
+<div class="buttons"><a class="btn primary" href="#results">探索我的成果 →</a><a class="btn outline" href="#about">認識我</a></div>
+</div>
+<div class="profile reveal">
+<div class="photo">👤</div>
+<h3>你的名字</h3>
+<p>○○高中｜○年級</p>
+<p>「讓每一次學習，都成為下一次成長的起點。」</p>
+</div>
+</div>
+</section>
+
+<section id="about">
+<div class="container">
+<div class="title reveal"><small>ABOUT ME</small><h2>關於我</h2><p>認識我的學習特質與成長方向</p></div>
+<div class="grid2">
+<div class="card reveal"><div class="icon">👋</div><h3>我的自我介紹</h3><p>我是一名對未來充滿好奇的高中生，在不同課程與活動中探索自己的興趣，也逐漸找到想深入發展的方向。</p></div>
+<div class="card reveal"><div class="icon">💡</div><h3>我的學習方式</h3><p>我喜歡透過實際操作、資料蒐集與問題解決來學習，遇到問題時會主動尋找資料並嘗試不同方法。</p></div>
+<div class="card reveal"><div class="icon">🌱</div><h3>我的個人特質</h3><p>好奇、願意嘗試、重視團隊合作。我相信能力是在一次次經驗、修正與反思中慢慢累積的。</p></div>
+<div class="card reveal"><div class="icon">🎯</div><h3>我的學習目標</h3><p>透過高中三年的學習建立方向，整理自己的成果與經驗，為未來的大學學習做好準備。</p></div>
+</div>
+</div>
+</section>
+
+<section id="journey">
+<div class="container">
+<div class="title reveal"><small>MY JOURNEY</small><h2>高中學習歷程</h2><p>從探索、實踐到整合</p></div>
+<div class="timeline">
+<div class="item reveal"><div class="dot"></div><div class="timeline-card"><div class="year">高中一年級</div><h3>探索與適應</h3><p>開始接觸不同課程與活動，學習時間管理、團隊合作，也嘗試了解自己的興趣。</p></div></div>
+<div class="item reveal"><div class="dot"></div><div class="timeline-card"><div class="year">高中二年級</div><h3>深入與實踐</h3><p>透過探究與實作、專題及課程成果，把課堂知識實際運用，逐漸形成自己的學習方向。</p></div></div>
+<div class="item reveal"><div class="dot"></div><div class="timeline-card"><div class="year">高中三年級</div><h3>整合與展望</h3><p>整理三年的學習成果，思考自己的優勢與未來方向，準備迎接大學階段。</p></div></div>
+</div>
+</div>
+</section>
+
+<section id="results">
+<div class="container">
+<div class="title reveal"><small>LEARNING RESULTS</small><h2>課程學習成果</h2><p>把學習變成看得見的作品</p></div>
+<div class="projects">
+<div class="project reveal"><div class="project-img">🔬</div><div class="project-body"><small>探究與實作</small><h3>我的研究專題</h3><p>從生活問題出發，蒐集資料、設計研究方法並完成成果與反思。</p></div></div>
+<div class="project reveal"><div class="project-img">💻</div><div class="project-body"><small>資訊課程</small><h3>個人網站設計</h3><p>學習 HTML、CSS 與 JavaScript，從零開始設計自己的學習歷程網站。</p></div></div>
+<div class="project reveal"><div class="project-img">📊</div><div class="project-body"><small>資料分析</small><h3>資料分析作品</h3><p>進行資料蒐集與整理，把資訊轉換成容易理解的圖表與結論。</p></div></div>
+<div class="project reveal"><div class="project-img">🎨</div><div class="project-body"><small>跨領域</small><h3>創意設計作品</h3><p>結合不同領域知識，以設計與創意嘗試解決問題。</p></div></div>
+<div class="project reveal"><div class="project-img">📖</div><div class="project-body"><small>閱讀學習</small><h3>閱讀與反思</h3><p>閱讀相關書籍與資料，整理觀點並形成自己的想法。</p></div></div>
+<div class="project reveal"><div class="project-img">🚀</div><div class="project-body"><small>自主學習</small><h3>自主學習計畫</h3><p>自己設定學習目標、安排進度，完成最後成果並記錄學習歷程。</p></div></div>
+</div>
+</div>
+</section>
+
+<section id="activities">
+<div class="container">
+<div class="title reveal"><small>MULTIPLE PERFORMANCE</small><h2>多元表現</h2><p>課堂之外，我也透過不同經驗探索自己</p></div>
+<div class="activities">
+<div class="activity reveal"><div class="big">🏆</div><h3>競賽</h3><p>累積實戰經驗</p></div>
+<div class="activity reveal"><div class="big">👥</div><h3>社團</h3><p>培養興趣與合作</p></div>
+<div class="activity reveal"><div class="big">🌎</div><h3>志工</h3><p>學習服務與互動</p></div>
+<div class="activity reveal"><div class="big">📜</div><h3>證照</h3><p>確認學習成果</p></div>
+<div class="activity reveal"><div class="big">🎤</div><h3>幹部</h3><p>培養責任與領導</p></div>
+<div class="activity reveal"><div class="big">🧑‍💻</div><h3>自主學習</h3><p>探索個人興趣</p></div>
+<div class="activity reveal"><div class="big">📚</div><h3>閱讀</h3><p>拓展知識視野</p></div>
+<div class="activity reveal"><div class="big">✨</div><h3>其他經驗</h3><p>記錄值得留下的成長</p></div>
+</div>
+</div>
+</section>
+
+<section id="skills">
+<div class="container">
+<div class="title reveal"><small>MY SKILLS</small><h2>我的能力</h2><p>高中三年逐漸累積的能力</p></div>
+<div class="skills">
+<div class="skill reveal"><div class="skill-head"><span>問題解決</span><span>85%</span></div><div class="bar"><div class="fill" data-width="85%"></div></div></div>
+<div class="skill reveal"><div class="skill-head"><span>團隊合作</span><span>90%</span></div><div class="bar"><div class="fill" data-width="90%"></div></div></div>
+<div class="skill reveal"><div class="skill-head"><span>自主學習</span><span>88%</span></div><div class="bar"><div class="fill" data-width="88%"></div></div></div>
+<div class="skill reveal"><div class="skill-head"><span>資訊能力</span><span>80%</span></div><div class="bar"><div class="fill" data-width="80%"></div></div></div>
+<div class="skill reveal"><div class="skill-head"><span>溝通表達</span><span>82%</span></div><div class="bar"><div class="fill" data-width="82%"></div></div></div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<div class="title reveal"><small>REFLECTION</small><h2>我的學習反思</h2><p>學習不只是得到成果，更重要的是了解自己</p></div>
+<div class="quote reveal"><b>“</b><p>高中的學習讓我發現，真正重要的並不是每一次都得到完美的答案，而是遇到問題時願意繼續嘗試。</p><p>從一開始不知道自己適合什麼，到慢慢找到感興趣的方向，每一次課程、每一份作品與每一段經驗，都讓我更加了解自己。</p><b>”</b></div>
+</div>
+</section>
+
+<section id="future">
+<div class="container">
+<div class="title reveal"><small>FUTURE</small><h2>我的升學目標</h2><p>從高中出發，走向下一個學習階段</p></div>
+<div class="futures">
+<div class="future reveal"><div class="num">01</div><h3>探索大學領域</h3><p>進一步了解自己有興趣的學群與科系，找到適合自己的學習環境。</p></div>
+<div class="future reveal"><div class="num">02</div><h3>建立專業能力</h3><p>進入大學後深入學習專業知識，並透過專題與實作累積經驗。</p></div>
+<div class="future reveal"><div class="num">03</div><h3>成為更好的自己</h3><p>保持好奇與學習的態度，持續探索未知，讓能力不斷成長。</p></div>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
+<div class="contact reveal"><h2>謝謝你閱讀我的學習歷程</h2><p>希望未來的我，也能繼續帶著好奇心前進。</p><a class="btn primary" href="mailto:your-email@example.com">✉ 聯絡我</a></div>
+</div>
+</section>
+
+<footer>© 2026 你的名字｜高中學習歷程網站</footer>
+<button id="top">↑</button>
+
+<script>
+const menu=document.getElementById("menu"),links=document.getElementById("links");
+menu.onclick=()=>links.classList.toggle("open");
+document.querySelectorAll(".links a").forEach(a=>a.onclick=()=>links.classList.remove("open"));
+
+const observer=new IntersectionObserver(entries=>{
+ entries.forEach(e=>{
+  if(e.isIntersecting)e.target.classList.add("show");
+ });
+},{threshold:.12});
+document.querySelectorAll(".reveal").forEach(e=>observer.observe(e));
+
+const skillObserver=new IntersectionObserver(entries=>{
+ entries.forEach(e=>{
+  if(e.isIntersecting){
+   e.target.style.width=e.target.dataset.width;
+   skillObserver.unobserve(e.target);
+  }
+ });
+},{threshold:.5});
+document.querySelectorAll(".fill").forEach(e=>skillObserver.observe(e));
+
+const top=document.getElementById("top");
+window.addEventListener("scroll",()=>{
+ top.classList.toggle("show",scrollY>500);
+});
+top.onclick=()=>scrollTo({top:0,behavior:"smooth"});
+</script>
+</body>
+</html>
